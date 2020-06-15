@@ -1,8 +1,10 @@
 <?php
 
-require __DIR__ . '/bootstrap.php';
+use App\Application\ContainerService;
+
+require __DIR__ . '/vendor/autoload.php';
 
 $container = new ContainerService();
 $userLoader = $container->getUserLoader();
 
-print_r(json_encode($userLoader->all()));
+print(json_encode($userLoader->all()));

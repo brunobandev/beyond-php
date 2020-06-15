@@ -1,8 +1,8 @@
 <?php
 
-namespace Application;
+namespace App\Application;
 
-use Adapter\AdapterInterface;
+use App\Adapter\AdapterInterface;
 
 class UserService
 {

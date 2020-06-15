@@ -1,7 +1,9 @@
 <?php
 
-use Adapter\JsonAdapter;
-use Application\UserService;
+namespace App\Application;
+
+use App\Adapter\JsonAdapter;
+use App\Application\UserService;
 
 class ContainerService
 {

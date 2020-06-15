@@ -1,0 +1,10 @@
+{
+    "name": "brunobandev/beyond-php",
+    "description": "Small lab",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "classmap": ["src"]
+    }
+}
