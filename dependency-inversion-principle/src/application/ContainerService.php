@@ -3,6 +3,7 @@
 namespace App\Application;
 
 use App\Adapter\JsonAdapter;
+use App\Adapter\PdoAdapter;
 use App\Application\UserService;
 
 class ContainerService
@@ -22,7 +23,7 @@ class ContainerService
     {
         if ($this->userStorage === null) {
             $this->userStorage = new JsonAdapter('./resources/users.json');
-            // $this->userStorage = new MysqlAdapter();
+            // $this->userStorage = new PdoAdapter();
         }
         return $this->userStorage;
     }
