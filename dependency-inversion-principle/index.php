@@ -1,11 +1,8 @@
 <?php
 
-use Adapter\Database;
-use Adapter\JsonAdapter;
-
 require __DIR__ . '/bootstrap.php';
 
-$adapter = new JsonAdapter(__DIR__ . '/resources/users.json');
-$container = new Database($adapter);
+$container = new ContainerService();
+$userLoader = $container->getUserLoader();
 
-print_r(json_encode($container->getAllUsers()));
+print_r(json_encode($userLoader->all()));
